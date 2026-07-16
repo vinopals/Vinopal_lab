@@ -1,0 +1,117 @@
+name: build-preview
+run-name: build pull request preview
+
+on:
+  # run when called from another workflow
+  workflow_call:
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+# variables
+env:
+  PREVIEWS_FOLDER: preview
+
+jobs:
+  get-input:
+    if: github.event.action != 'closed'
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Debug dump
+        if: runner.debug == '1'
+        uses: crazy-max/ghaction-dump-context@v3
+
+      - name: Checkout pr branch contents
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Get pages url
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: SSH debug
+        if: runner.debug == '1'
+        uses: mxschmitt/action-tmate@v3
+
+      - name: Build preview version of site
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}/${{ env.PREVIEWS_FOLDER }}/pr-${{ github.event.number }}"
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: build-preview-${{ github.event.number }}
+          path: _site
+          retention-days: 1
+
+  publish-preview:
+    needs: get-input
+    permissions:
+      actions: read
+      contents: write
+      pull-requests: write
+    if: needs.get-input.result == 'success' || needs.get-input.result == 'skipped'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Debug dump
+        if: runner.debug == '1'
+        uses: crazy-max/ghaction-dump-context@v3
+
+      - name: Download preview artifact
+        if: github.event.action != 'closed'
+        uses: actions/download-artifact@v8
+        with:
+          github-token: ${{ github.token }}
+          name: build-preview-${{ github.event.number }}
+          path: artifacts
+
+      - name: Deploy preview to pages branch
+        if: github.event.action != 'closed'
+        uses: rossjrw/pr-preview-action@v1.8.1
+        with:
+          source-dir: artifacts
+          umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
+          action: deploy
+
+      - name: Remove preview from pages branch
+        if: github.event.action == 'closed'
+        uses: rossjrw/pr-preview-action@v1.8.1
+        with:
+          source-dir: .
+          umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
+          action: remove
+
+      - name: Checkout pages branch
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+
+      - name: Clean up preview folders
+        if: github.event.number != ''
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { rm } = require("fs").promises;
+            const { PREVIEWS_FOLDER } = process.env;
+            const { owner, repo } = context.repo;
+            const prs = (await github.rest.pulls.list({ owner, repo, state: "closed" })).data;
+            for (const { number } of prs)
+              await rm(`${PREVIEWS_FOLDER}/pr-${number}`, { recursive: true, force: true });
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          branch: gh-pages
+          commit_message: "Clean up previews"
