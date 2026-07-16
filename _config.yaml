@@ -16,12 +16,6 @@ links:
   
 proofer: false
 
-# site social media and other links
-links:
-  email: vinopals@g.ujep.cz
-  orcid: 0000-0001-9352-4580
-  github: Vinopal_lab
-
 ### jekyll settings
 
 # front matter defaults
