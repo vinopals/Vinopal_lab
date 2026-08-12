@@ -24,7 +24,7 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+zkouska zkouska
 
 {%
   include button.html
