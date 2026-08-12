@@ -1,9 +1,10 @@
-{%- if include.icon contains ".svg" -%}
-  {%- capture inline -%}
-    {%- include {{ include.icon }} -%}
-  {%- endcapture -%}
+{%- if include.icon == "manubot.svg" -%}
   <span class="icon">
-    {{- inline | strip_newlines -}}
+    {%- include manubot.svg -%}
+  </span>
+{%- elsif include.icon contains ".svg" -%}
+  <span class="icon">
+    <img src="{{ include.icon | relative_url }}" alt="" aria-hidden="true">
   </span>
 {%- elsif include.icon and include.icon != "" -%}
   <i class="icon {{ include.icon }}"></i>
