@@ -1,11 +1,11 @@
 ---
-name: Jane Smith
+name: Stanislav Vinopal
 image: images/photo.jpg
 role: principal-investigator
-affiliation: University of Colorado
+affiliation: Jan Evangelista Purkyně University in Ústí nad Labem
 aliases:
-  - J. Smith
-  - J Smith
+  - St. Vinopal
+  - S Vinopal
 links:
   home-page: https://janesmith.com
   orcid: 0000-0001-8713-9213
