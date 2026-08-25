@@ -1,7 +1,7 @@
 ---
 name: Lisa Postelt
 image: images/lisa-postelt.jpg
-role: phd-student
+role: phd
 affiliation: Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University (UJEP), Ústí nad Labem
 aliases:
   - L. Postelt
