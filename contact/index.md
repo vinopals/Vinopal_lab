@@ -7,71 +7,53 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We are located at the Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University in Ústí nad Labem.
+
+{% include section.html %}
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="stanislav.vinopal@ujep.cz"
+  link="stanislav.vinopal@ujep.cz"
 %}
+
+{%
+  include button.html
+  type="email"
+  text="vinopals@g.ujep.cz"
+  link="vinopals@g.ujep.cz"
+%}
+
 {%
   include button.html
   type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  text="+420 475 28 6784"
+  link="+420475286784"
 %}
+
 {%
   include button.html
   type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  text="CPTO building, room 4.03"
+  tooltip="Open in Google Maps"
+  link="https://maps.app.goo.gl/MtU1AUHEqQUdWsaC8"  
 %}
 
 {% include section.html %}
 
-{% capture col1 %}
+### Lab address
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
+**Vinopal Lab**  
+Centre for Nanomaterials and Biotechnology (CENAB)  
+Faculty of Science  
+Jan Evangelista Purkyně University  
+Pasteurova 3632/15 (CPTO building)  
+400 96 Ústí nad Labem  
+Czech Republic
 
-{% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+**Principal Investigator**  
+Ing. Stanislav Vinopal, Ph.D.  
+Room: CPTO 4.03  
+Email: stanislav.vinopal@ujep.cz  
+Phone: +420 475 28 6784
