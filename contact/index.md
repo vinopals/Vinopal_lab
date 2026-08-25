@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-We are located at the Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz)), Faculty of Science, Jan Evangelista Purkyně University in Ústí nad Labem.
+We are located at the Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz)), [Faculty of Science](https://prf.ujep.cz/en/), Jan Evangelista Purkyně University in Ústí nad Labem.
 
 {% include section.html %}
 
@@ -46,7 +46,7 @@ We are located at the Centre for Nanomaterials and Biotechnology ([CENAB](https:
 
 **Vinopal Lab**  
 Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz))  
-Faculty of Science  
+[Faculty of Science](https://prf.ujep.cz/en/)  
 Jan Evangelista Purkyně University  
 Pasteurova 3632/15 (CPTO building)  
 400 96 Ústí nad Labem  
