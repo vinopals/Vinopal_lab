@@ -6,10 +6,10 @@ affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
   - M. Štofik
   - Marcel Stofik
-  - Dr. Marcel Štofik
+  - Marcel Štofik
 links:
   email: marcel.stofik@ujep.cz
 ---
 
-Internal collaborator from CENAB.  
+Internal collaborator.  
 Key person for EM images acquisition, Zeiss Crossbeam 350 operator.
