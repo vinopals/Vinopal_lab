@@ -2,7 +2,7 @@
 name: Stanislav Vinopal
 image: images/photo.jpg
 role: principal-investigator
-affiliation: Centre for Nanomaterials and Biotechnology, Faculty of Science, Jan Evangelista Purkyně University in Ústí nad Labem
+affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
   - Vinopal S
   - Stanislav Vinopal
