@@ -2,7 +2,7 @@
 name: Marcel Štofik
 image: images/marcel-stofik.jpg
 role: internal-collaborator
-affiliation: Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University (UJEP)
+affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
   - M. Štofik
   - Marcel Stofik
