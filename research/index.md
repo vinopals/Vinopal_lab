@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Publications from the Vinopal Lab and collaborating researchers at CENAB (2021 onwards).
+Publications from the Vinopal Lab and collaborators.
 
 {% include section.html %}
 
