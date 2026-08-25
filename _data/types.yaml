@@ -17,6 +17,22 @@ phd:
 undergrad:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Student
+  
+master:
+  icon: fa-solid fa-user-graduate
+  description: Master Student
+
+bachelor:
+  icon: fa-solid fa-user
+  description: Bachelor Student
+
+alumni:
+  icon: fa-solid fa-user-group
+  description: Alumni
+
+internal-collaborator:
+  icon: fa-solid fa-handshake
+  description: Internal Collaborator (CENAB)
 
 programmer:
   icon: fa-solid fa-code
