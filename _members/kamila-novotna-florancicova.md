@@ -1,7 +1,7 @@
 ---
 name: Kamila Novotná Floriančičová
 image: images/kamila-novotna-florancicova.jpg
-role: phd-student
+role: phd
 affiliation: Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University (UJEP), Ústí nad Labem
 aliases:
   - K. Novotná Floriančičová
