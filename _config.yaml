@@ -1,8 +1,6 @@
 # site properties and page defaults
 title: Vinopal Lab
-subtitle: >-
-  Cell Biology and Tardigrade Research Group
-  <br>at the <a href="https://cenab.ujep.cz">Centre for Nanomaterials and Biotechnology</a>, <a href="https://prf.ujep.cz/en/">Faculty of Science</a>, Jan Evangelista Purkyně University in Ústí nad Labem
+subtitle: Cell Biology and Tardigrade Research Group
 description: We study cell biology with a special focus on tardigrades and cytoskeletal dynamics.
 
 header: /images/background.jpg
