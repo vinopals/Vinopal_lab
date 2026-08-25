@@ -6,6 +6,7 @@ affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
   - K. Novotná Floriančičová
   - Kamila Novotna Floriancicova
+  - Kamila Novotná Floriančičová
 links:
   # orcid: ...
   # email: kamca.flori@gmail.com
