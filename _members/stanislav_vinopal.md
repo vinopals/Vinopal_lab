@@ -1,6 +1,6 @@
 ---
 name: Stanislav Vinopal
-image: images/photo.jpg
+image: images/stanislav_vinopal.jpg
 role: principal-investigator
 affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
