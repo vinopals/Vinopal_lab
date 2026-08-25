@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-We are a research group based at the Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz)), Faculty of Science, Jan Evangelista Purkyně University in Ústí nad Labem.  
+We are a research group based at the Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz)), [Faculty of Science](https://prf.ujep.cz/en/), Jan Evangelista Purkyně University in Ústí nad Labem.  
 Our research primarily focuses on the fascinating biology of tardigrades.
 We also have an expertise in various aspects of the cytoskeleton, neuroscience, cell and molecular biology, and biochemistry.
 
