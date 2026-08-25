@@ -1,22 +1,12 @@
 ---
 ---
 
-# Lab Website Template
+# Vinopal Lab
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
+**Centre for Nanomaterials and Biotechnology ([CENAB](https://cenab.ujep.cz))**  
+[Faculty of Science](https://prf.ujep.cz/en/), Jan Evangelista Purkyně University in Ústí nad Labem
 
-{%
-  include button.html
-  type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
-%}
-{%
-  include button.html
-  type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
-%}
+We study cell biology with a special focus on tardigrades and cytoskeletal dynamics.
 
 {% include section.html %}
 
@@ -24,7 +14,7 @@ Spend less time worrying about managing a website and citations, and more time r
 
 {% capture text %}
 
-zkouska zkouska
+Our research primarily focuses on the unique biology of tardigrades.
 
 {%
   include button.html
@@ -47,33 +37,7 @@ zkouska zkouska
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-{% capture text %}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+Meet the people behind the science
 {%
   include button.html
   link="team"
@@ -90,5 +54,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   image="images/photo.jpg"
   link="team"
   title="Our Team"
+  flip=true
   text=text
 %}
