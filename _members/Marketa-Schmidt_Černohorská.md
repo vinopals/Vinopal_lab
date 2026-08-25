@@ -2,7 +2,7 @@
 name: Markéta Schmidt Černohorská
 image: images/marketa-schmidt-cernohorska.jpg
 role: postdoc
-affiliation: Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University (UJEP), Ústí nad Labem
+affiliation: CENAB, Faculty of Science, UJEP, Ústí nad Labem
 aliases:
   - M. Schmidt Černohorská
   - Marketa Schmidt Cernohorska
