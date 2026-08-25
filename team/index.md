@@ -7,29 +7,33 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+We are a young and dynamic group based at the Centre for Nanomaterials and Biotechnology (CENAB), Faculty of Science, Jan Evangelista Purkyně University in Ústí nad Labem.  
+Our research focuses on centrosomal and acentrosomal microtubule nucleation, neuronal cytoskeleton, and the fascinating biology of tardigrades.
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+## Principal Investigator
 
-{% include section.html background="images/background.jpg" dark=true %}
+{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Postdocs
+
+{% include list.html data="members" component="portrait" filter="role == 'postdoc'" %}
+
+## PhD Students
+
+{% include list.html data="members" component="portrait" filter="role == 'phd'" %}
+
+## Master Students
+
+{% include list.html data="members" component="portrait" filter="role == 'master'" %}
+
+## Bachelor Students
+
+{% include list.html data="members" component="portrait" filter="role == 'bachelor'" %}
 
 {% include section.html %}
 
-{% capture content %}
+## Alumni
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+{% include list.html data="members" component="portrait" filter="role == 'alumni'" %}
